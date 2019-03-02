@@ -1,0 +1,5 @@
+<launch>
+	<node name="raspberry_node1" pkg="ros_car" type="raspberry_node1.py" output="screen" />
+	<node name="raspberry_node2" pkg="ros_car" type="raspberry_node2.py" output="screen" />
+</launch>
+

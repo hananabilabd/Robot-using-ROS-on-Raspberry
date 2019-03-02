@@ -1,0 +1,4 @@
+<launch>
+	<node name="laptop_node1" pkg="ros_102" type="laptop_node1.py" output="screen" />
+	<node name="laptop_node2" pkg="ros_102" type="laptop_node2.py" output="screen" />
+</launch>
