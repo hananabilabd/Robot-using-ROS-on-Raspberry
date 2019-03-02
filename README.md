@@ -7,3 +7,7 @@ Control robot from laptop using 2 nodes and 2 nodes on raspberry
 2. A laptop with 2 rosnodes:
     - One listens to the ultrasound data and decides on what speed should the robot move and publishes it.
     - The other rosnode should listens to the robot's moving status and show if the controlling commands done as expected or failed.
+## Description 
+using roslaunch 2 nodes run on laptop as a master roscore , then 2 nodes run on raspberry-pi 
+- laptop_node1 captures keyboard strokes for specific movement then publish it to raspberry_node1, then raspberry_node1 send feedback to laptop_node1 again whether it executes the command or not
+- raspberry-node2 detect distance with ultrasonic sensor then publish it to laptop_node2 , laptop_node2 then publish acknowledge 
